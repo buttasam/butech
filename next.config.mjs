@@ -1,6 +1,7 @@
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const basePath = isGithubActions && repository ? `/${repository}` : "";
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = rawBasePath
+  ? `/${rawBasePath.replace(/^\/+|\/+$/g, "")}`
+  : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

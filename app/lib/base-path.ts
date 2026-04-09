@@ -1,5 +1,6 @@
-const basePath = process.env.GITHUB_ACTIONS === "true"
-  ? `/${process.env.GITHUB_REPOSITORY?.split("/")[1] ?? ""}`.replace(/\/$/, "")
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = rawBasePath
+  ? `/${rawBasePath.replace(/^\/+|\/+$/g, "")}`
   : "";
 
 export function withBasePath(path: string) {
