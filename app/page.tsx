@@ -115,6 +115,7 @@ export default function Home() {
                           <Phone size={14} strokeWidth={2} />
                           +420 730 844 366
                         </a>
+                        <br/>
                         <a
                           className="inline-flex items-center gap-2 font-semibold transition hover:text-(--brand)"
                           href="mailto:butech@butech.cz"
