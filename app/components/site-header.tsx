@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { withBasePath } from "../lib/base-path";
 
 const navItems = [
   { href: "#kontakty", label: "Kontakty" },
@@ -17,7 +18,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between">
           <a href="#" aria-label="BuTech">
             <Image
-              src="/butech-logo.svg"
+              src={withBasePath("/butech-logo.svg")}
               alt="BuTech s.r.o."
               width={320}
               height={94}

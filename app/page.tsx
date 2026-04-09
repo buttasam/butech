@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Building2, ChevronRight, Mail, MapPin, Phone, UserRound } from "lucide-react";
 import { SiteHeader } from "./components/site-header";
+import { withBasePath } from "./lib/base-path";
 
 const companyDetails = [
   {
@@ -48,7 +49,7 @@ const companyDetails = [
 const projects = [
   {
     name: "TopSpy.cz",
-    logo: "/butech-topspy-logo.svg",
+    logo: withBasePath("/butech-topspy-logo.svg"),
     logoAlt: "TopSpy.cz logo",
     subtitle: "TopSpy.cz - detektivní technika",
     paragraphs: [
@@ -67,7 +68,7 @@ const projects = [
   },
   {
     name: "SatCar.cz",
-    logo: "/butech-logo-satcar-cz.png",
+    logo: withBasePath("/butech-logo-satcar-cz.png"),
     logoAlt: "SatCar.cz logo",
     subtitle: "SatCar.cz - sledování vozidel",
     paragraphs: [
