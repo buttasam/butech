@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { withBasePath } from "./lib/base-path";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat"
+});
 
 export const metadata: Metadata = {
   title: "BuTech s.r.o. | Detektivni technika, TSCM a GPS sledovani vozidel",
@@ -18,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body>{children}</body>
+      <body className={montserrat.variable}>{children}</body>
     </html>
   );
 }

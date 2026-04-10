@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
   background: #ffffff;
   color: var(--brand-ink);
 }
@@ -31,7 +31,7 @@ a {
 
 .brand-heading {
   color: var(--brand-green);
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
   font-weight: 800;
   letter-spacing: -0.04em;
 }

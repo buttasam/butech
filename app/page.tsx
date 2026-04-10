@@ -93,7 +93,7 @@ export default function Home() {
     <div className="min-h-screen bg-(--surface) text-slate-900">
       <SiteHeader />
 
-      <main className="mx-auto max-w-6xl px-6 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-12">
+      <main className="mx-auto max-w-6xl px-6 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-8">
         <section id="kontakty">
           <div className="mx-auto max-w-5xl">
             <h2 className="brand-heading text-center text-2xl text-(--brand-green) sm:text-3xl">
@@ -115,7 +115,7 @@ export default function Home() {
                           <Phone size={14} strokeWidth={2} />
                           +420 730 844 366
                         </a>
-                        <br/>
+                        <br />
                         <a
                           className="inline-flex items-center gap-2 font-semibold transition hover:text-(--brand)"
                           href="mailto:butech@butech.cz"
@@ -131,7 +131,7 @@ export default function Home() {
                           strokeWidth={2}
                           className="mt-1 shrink-0 text-(--brand)"
                         />
-                        <span className="font-semibold text-slate-900">{value}</span>
+                        <a href="https://maps.app.goo.gl/bJPWYs9u1UpB8LJH6" target="_blank"><span className="font-semibold text-slate-900 hover:underline">{value}</span></a>
                       </div>
                     ) : label === "Jednatel" ? (
                       <div className="inline-flex items-center gap-1.5">
@@ -202,8 +202,8 @@ export default function Home() {
                   key={project.name}
                   className="border border-(--line) bg-white px-6 py-8 shadow-[0_18px_50px_rgba(8,50,72,0.06)] sm:px-10"
                 >
-                  <div className="flex flex-col items-center gap-8 text-center">
-                    <div className="relative flex w-full max-w-[320px] shrink-0 items-center justify-center lg:max-w-[360px]">
+                  <div className="flex flex-col items-center gap-6 text-center">
+                    <div className="relative flex w-full max-w-[320px] shrink-0 items-center justify-center lg:max-w-90">
                       <Image
                         src={project.logo}
                         alt={project.logoAlt}
