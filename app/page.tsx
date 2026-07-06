@@ -85,6 +85,24 @@ const projects = [
     closing:
       "Součástí je odborné poradenství, instalace na míru a technická podpora.",
     href: "https://www.satcar.cz"
+  },
+  {
+    name: "RecordLab.cz",
+    logo: withBasePath("/butech-logo-recordlab-cz.svg"),
+    logoAlt: "RecordLab.cz logo",
+    subtitle: "RecordLab.cz - automatický přepis zvukových nahrávek",
+    paragraphs: [
+      "Online služba pro rychlý a přehledný převod zvukových nahrávek do textu.",
+      "Nahrajete audio a RecordLab připraví časovaný přepis, ke kterému se můžete kdykoliv vrátit."
+    ],
+    services: [
+      "automatický přepis s časovými značkami",
+      "přehrávání nahrávky u konkrétní části textu",
+      "ruční úpravy, AI korektura a shrnutí"
+    ],
+    closing:
+      "Hotový přepis zůstává bezpečně uložený a můžete si ho kdykoliv stáhnout.",
+    href: "https://recordlab.cz"
   }
 ];
 
