@@ -221,7 +221,13 @@ export default function Home() {
                   className="border border-(--line) bg-white px-6 py-8 shadow-[0_18px_50px_rgba(8,50,72,0.06)] sm:px-10"
                 >
                   <div className="flex flex-col items-center gap-6 text-center">
-                    <div className="relative flex w-full max-w-[320px] shrink-0 items-center justify-center lg:max-w-90">
+                    <a
+                      className="relative flex w-full max-w-[320px] shrink-0 items-center justify-center transition-opacity hover:opacity-80 lg:max-w-90"
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Otevřít web ${project.name}`}
+                    >
                       <Image
                         src={project.logo}
                         alt={project.logoAlt}
@@ -229,9 +235,18 @@ export default function Home() {
                         height={130}
                         className="h-auto w-full object-contain"
                       />
-                    </div>
+                    </a>
                     <div className="w-full">
-                      <h3 className="brand-heading text-2xl">{project.name}</h3>
+                      <h3 className="brand-heading text-2xl">
+                        <a
+                          className="transition-opacity hover:opacity-70"
+                          href={project.href}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {project.name}
+                        </a>
+                      </h3>
                       <p className="mt-2 text-lg font-semibold text-slate-900">
                         {project.subtitle}
                       </p>
